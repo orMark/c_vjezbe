@@ -1,0 +1,16 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+int main(){
+
+int a;
+bool p=true;
+cin>>a;
+for(int i=2;i<a && p==true;i++)	
+if(a%i==0) p=false;
+if(p==true) cout<<a;
+else cout<<"broj nije prost"<<endl;
+
+return 0;
+
+}
