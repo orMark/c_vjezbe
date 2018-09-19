@@ -1,0 +1,14 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+/*Ucitati 2 cijela broja i Ispisati sumu svih parnih brojeva izmedu njih.	*/
+int main(){
+int sum=0,a,b;
+cin>>a>>b;
+if(a>b) swap(a,b);
+for(int i=a+1;i<b;i++)
+if(i%2==0) sum+=i;cout<<sum<<endl;
+
+return 0;
+
+}
